@@ -1,0 +1,14 @@
+{
+  "name": "beautyworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Fedotova Alisa",
+  "license": "ISC",
+  "dependencies": {
+    "scss": "^0.2.4"
+  }
+}
