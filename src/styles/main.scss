@@ -1,7 +1,7 @@
 $green: #00bf78;
 $orange: #fb9475;
 $orange-hover: #fb8975;
-$blue: #278AFF;
+$blue: #278aff;
 $gray: #999999;
 $text-color: #333333;
 
@@ -24,7 +24,7 @@ body {
 
 main {
   max-width: 1110px;
-  margin: auto;
+  margin: 0 auto;
   padding-right: 32px;
   padding-left: 32px;
 }
@@ -204,5 +204,135 @@ section {
         margin-top: 20px;
       }
     }
+  }
+}
+
+/* About*/
+.about {
+  padding: 100px 0;
+
+  &__container {
+    display: flex;
+  }
+
+  .about__container + .about__container {
+    margin-top: 100px;
+  }
+
+  &__content {
+    width: 50%;
+  }
+
+  &__title {
+    margin-top: 0;
+    font-size: 48px;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 0;
+  }
+
+  &__text {
+    line-height: 26px;
+    transition: height 0.3s ease-in, opacity 0.3s ease-in;
+    height: 200px;
+    opacity: 1;
+
+    &.collapse {
+      height: 0;
+      opacity: 0;
+    }
+  }
+
+  &__btn {
+    color: $blue;
+    background: transparent;
+    padding: 0;
+
+    &:hover, &:focus {
+      color: $green;
+      background: transparent;
+    }
+  }
+
+  &__videobox {
+    width: 50%;
+  }
+
+}
+
+.videobox {
+  cursor: pointer;
+
+  &:hover {
+    .videobox__wrap {
+      transform: scale(1.1);
+    }
+  }
+
+  &__video {
+    position: relative;
+    width: 443px;
+    height: 295px;
+    float: right;
+    border-radius: 8px;
+    background-size: contain;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(#000, 0.2);
+      border-radius: 8px;
+    }
+  }
+
+  &__wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s ease-in;
+  }
+
+  &__play {
+    width: 60px;
+    height: 60px;
+    background: url("/src/img/icon/video-play.svg") no-repeat;
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-top: 6px;
+  }
+}
+
+.aboutcard {
+  text-align: center;
+  width: 34%;
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  &__subtitle {
+    margin-top: 12px;
+    line-height: 22px;
   }
 }

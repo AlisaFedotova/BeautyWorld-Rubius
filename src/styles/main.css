@@ -17,7 +17,7 @@ body {
 
 main {
   max-width: 1110px;
-  margin: auto;
+  margin: 0 auto;
   padding-right: 32px;
   padding-left: 32px;
 }
@@ -170,6 +170,115 @@ section {
 }
 .header__social .social__icon:not(.header__social .social__icon:first-child) {
   margin-top: 20px;
+}
+
+/* About*/
+.about {
+  padding: 100px 0;
+}
+.about__container {
+  display: flex;
+}
+.about .about__container + .about__container {
+  margin-top: 100px;
+}
+.about__content {
+  width: 50%;
+}
+.about__title {
+  margin-top: 0;
+  font-size: 48px;
+  font-weight: 700;
+}
+.about__subtitle {
+  font-size: 20px;
+  line-height: 32px;
+  margin-top: 0;
+}
+.about__text {
+  line-height: 26px;
+  transition: height 0.3s ease-in, opacity 0.3s ease-in;
+  height: 200px;
+  opacity: 1;
+}
+.about__text.collapse {
+  height: 0;
+  opacity: 0;
+}
+.about__btn {
+  color: #278aff;
+  background: transparent;
+  padding: 0;
+}
+.about__btn:hover, .about__btn:focus {
+  color: #00bf78;
+  background: transparent;
+}
+.about__videobox {
+  width: 50%;
+}
+
+.videobox {
+  cursor: pointer;
+}
+.videobox:hover .videobox__wrap {
+  transform: scale(1.1);
+}
+.videobox__video {
+  position: relative;
+  width: 443px;
+  height: 295px;
+  float: right;
+  border-radius: 8px;
+  background-size: contain;
+}
+.videobox__video:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+.videobox__wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s ease-in;
+}
+.videobox__play {
+  width: 60px;
+  height: 60px;
+  background: url("/src/img/icon/video-play.svg") no-repeat;
+}
+.videobox__text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-top: 6px;
+}
+
+.aboutcard {
+  text-align: center;
+  width: 34%;
+}
+.aboutcard__title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.aboutcard__subtitle {
+  margin-top: 12px;
+  line-height: 22px;
 }
 
 /*# sourceMappingURL=main.css.map */
