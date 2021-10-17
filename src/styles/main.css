@@ -273,12 +273,20 @@ nav a:not(nav a:last-child) {
 
 .aboutcard {
   text-align: center;
-  width: 34%;
+  width: 350px;
+  margin: 0 auto;
+}
+.aboutcard:first-child {
+  margin-left: 0;
+}
+.aboutcard:last-child {
+  margin-right: 0;
 }
 .aboutcard__title {
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
+  margin: 28px 0 0;
 }
 .aboutcard__subtitle {
   margin-top: 12px;
