@@ -5,6 +5,8 @@ $blue: #278aff;
 $gray: #999999;
 $text-color: #333333;
 
+$page-padding: 32px;
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -23,10 +25,11 @@ body {
 }
 
 main {
-  max-width: 1110px;
+  max-width: 1110px + $page-padding * 2;
+  width: 100%;
   margin: 0 auto;
-  padding-right: 32px;
-  padding-left: 32px;
+  padding-right: $page-padding;
+  padding-left: $page-padding;
 }
 
 section {
@@ -77,7 +80,26 @@ section {
   }
 }
 
-/* ------------ Header -----------*/
+nav {
+  display: flex;
+  align-items: center;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      color: $green;
+      text-decoration: none;
+    }
+
+    &:not(&:last-child) {
+      margin-right: 28px;
+    }
+  }
+}
+
+/* ---------------------- Header ---------------------- */
 .container {
   position: relative;
   max-width: 1110px;
@@ -108,22 +130,8 @@ section {
     }
 
     nav {
-      display: flex;
-      align-items: center;
-
       a {
-        color: $text-color;
-        text-decoration: none;
         font-weight: 500;
-
-        &:hover, &:focus {
-          color: $green;
-          text-decoration: none;
-        }
-
-        &:not(last-child) {
-          margin-right: 28px;
-        }
       }
     }
 
@@ -207,7 +215,7 @@ section {
   }
 }
 
-/* About*/
+/* ---------------------- About ---------------------- */
 .about {
   padding: 100px 0;
 
@@ -334,5 +342,26 @@ section {
   &__subtitle {
     margin-top: 12px;
     line-height: 22px;
+  }
+}
+
+/* ---------------------- Footer ---------------------- */
+.footer {
+  max-width: 1110px + $page-padding * 2;
+  width: 100%;
+  margin: 0 auto;
+  padding-right: $page-padding;
+  padding-left: $page-padding;
+
+  &__wrapper {
+    font-size: 12px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    margin: 0 0 8px 0;
   }
 }
