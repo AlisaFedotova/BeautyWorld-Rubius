@@ -116,6 +116,11 @@ nav a:not(nav a:last-child) {
 .header__top .phone {
   position: relative;
   display: flex;
+  text-decoration: none;
+  color: #333333;
+}
+.header__top .phone:hover, .header__top .phone:focus {
+  text-decoration: none;
 }
 .header__top .phone span {
   font-size: 18px;
@@ -128,30 +133,30 @@ nav a:not(nav a:last-child) {
   right: 0;
   white-space: nowrap;
 }
-.header .hero__content {
+.header__content {
   width: 50%;
   padding: 120px 0 130px;
 }
-.header .hero__title {
+.header__title {
   font-size: 48px;
   font-weight: 600;
   line-height: 58px;
   margin-bottom: 30px;
 }
-.header .hero__subtitle {
+.header__subtitle {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 60px;
 }
-.header .hero__img {
+.header__img {
   display: flex;
   z-index: 1;
 }
-.header .hero__img img {
+.header__img img {
   z-index: 1;
 }
-.header .hero__img:before {
+.header__img:before {
   content: "";
   position: absolute;
   bottom: -110px;

@@ -7,6 +7,8 @@ $text-color: #333333;
 
 $page-padding: 32px;
 
+$font-family: 'Montserrat', sans-serif;
+
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -19,7 +21,7 @@ $page-padding: 32px;
 }
 
 body {
-  font: 16px 'Montserrat', sans-serif;
+  font: 16px $font-family;
   color: #333333;
   margin: 0;
 }
@@ -38,7 +40,7 @@ section {
 }
 
 .btn {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $font-family;
   color: #fff;
   background: $orange;
   border-radius: 24px;
@@ -138,6 +140,12 @@ nav {
     .phone {
       position: relative;
       display: flex;
+      text-decoration: none;
+      color: $text-color;
+
+      &:hover, &:focus {
+        text-decoration: none;
+      }
 
       span {
         font-size: 18px;
@@ -154,44 +162,42 @@ nav {
     }
   }
 
-  .hero {
-    &__content {
-      width: 50%;
-      padding: 120px 0 130px;
-    }
+  &__content {
+    width: 50%;
+    padding: 120px 0 130px;
+  }
 
-    &__title {
-      font-size: 48px;
-      font-weight: 600;
-      line-height: 58px;
-      margin-bottom: 30px;
-    }
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    margin-bottom: 30px;
+  }
 
-    &__subtitle {
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 24px;
-      margin-bottom: 60px;
-    }
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
 
-    &__img {
-      display: flex;
+  &__img {
+    display: flex;
+    z-index: 1;
+
+    img {
       z-index: 1;
+    }
 
-      img {
-        z-index: 1;
-      }
-
-      &:before {
-        content: "";
-        position: absolute;
-        bottom: -110px;
-        left: calc(100% - 480px);
-        width: 472px;
-        height: 472px;
-        background: $orange;
-        border-radius: 50%;
-      }
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -110px;
+      left: calc(100% - 480px);
+      width: 472px;
+      height: 472px;
+      background: $orange;
+      border-radius: 50%;
     }
   }
 

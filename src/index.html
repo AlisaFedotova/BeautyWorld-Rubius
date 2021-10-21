@@ -25,17 +25,17 @@
                     <a href="#about">О нас</a>
                     <a href="#contacts">Контакты</a>
                 </nav>
-                <a class="phone">
+                <a class="phone" href="tel:84996861762">
                     <span>8 (499) 686-17-62</span>
                     <small>с 10.00 до 19.00 без выходных</small>
                 </a>
             </div>
-            <div class="hero__content">
-                <h1 class="hero__title">Создай свой образ вместе с нами</h1>
-                <p class="hero__subtitle">Идеальный образ за 60 минут</p>
-                <button class="btn hero__btn">записаться онлайн</button>
+            <div class="header__content">
+                <h1 class="header__title">Создай свой образ вместе с нами</h1>
+                <p class="header__subtitle">Идеальный образ за 60 минут</p>
+                <button class="btn header__btn">записаться онлайн</button>
             </div>
-            <div class="header__hero hero">
+            <div class="header__hero">
                 <div class="hero__img">
                     <img src="img/hero.png" alt="hero">
                 </div>
@@ -84,19 +84,9 @@
                         моды. Мы приглашаем Вас в место, где гармония обретает форму, а внешность становится отражением
                         внутреннего мира. Новая жизнь начинается с небольших изменений. Мы помогаем нашим клиентам
                         воплотить их индивидуальность во внешнем облике. Мы создаем стиль – вместе с Вами и для Вас.</p>
-                    <script>
-                        function collapseText(btn) {
-                            let target = document.querySelector(btn.getAttribute('data-target'));
-                            if (target.className === 'about__text show') {
-                                target.className = 'about__text collapse';
-                            } else {
-                                target.className = 'about__text show'
-                            }
-                        }
-                    </script>
                 </div>
                 <div class="about__videobox videobox">
-                    <div class="videobox__video" style="background-image: url('/src/img/video-preview.jpg')">
+                    <div class="videobox__video">
                         <div class="videobox__wrap">
                             <div class="videobox__play"></div>
                             <span class="videobox__text">Короткое видео о нас</span>
@@ -167,7 +157,7 @@
         <div class="footer__wrapper">
             <div class="footer__text">
                 <p class="footer__copyright">© 2020 «Море красоты»</p>
-                <a href="#" class="footer__privacypolicy">Политика конфиденциальности</a>
+                <a href="#" class="footer__privacypolicy" target="_blank">Политика конфиденциальности</a>
             </div>
             <nav class="footer__nav">
                 <a href="#price">Услуги и цены</a>
@@ -178,5 +168,6 @@
         </div>
     </footer>
 </div>
+<script src="index.js"></script>
 </body>
 </html>
