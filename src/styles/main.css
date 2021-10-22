@@ -240,6 +240,7 @@ nav a:not(nav a:last-child) {
   float: right;
   border-radius: 8px;
   background-size: contain;
+  background-image: url("/src/img/video-preview.jpg");
 }
 .videobox__video:before {
   content: "";
