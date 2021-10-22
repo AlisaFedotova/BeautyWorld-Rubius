@@ -84,8 +84,8 @@ nav a:not(nav a:last-child) {
 /* ---------------------- Header ---------------------- */
 .container {
   position: relative;
-  max-width: 1110px;
-  margin: auto;
+  max-width: 1174px;
+  margin: 30px auto auto;
   padding-right: 32px;
   padding-left: 32px;
 }
@@ -135,13 +135,13 @@ nav a:not(nav a:last-child) {
 }
 .header__content {
   width: 50%;
-  padding: 120px 0 130px;
+  padding: 90px 0 130px;
 }
 .header__title {
   font-size: 48px;
   font-weight: 600;
   line-height: 58px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .header__subtitle {
   font-size: 20px;
@@ -174,7 +174,7 @@ nav a:not(nav a:last-child) {
 .header__social {
   position: absolute;
   right: 32px;
-  top: calc(100% / 2 - 28px);
+  top: calc(100% / 2 - 65px);
   flex-direction: column;
 }
 .header__social .social__icon:not(.header__social .social__icon:first-child) {
@@ -207,7 +207,7 @@ nav a:not(nav a:last-child) {
 .about__text {
   line-height: 26px;
   transition: height 0.3s ease-in, opacity 0.3s ease-in;
-  height: 200px;
+  height: 150px;
   opacity: 1;
 }
 .about__text.collapse {
@@ -292,11 +292,12 @@ nav a:not(nav a:last-child) {
   font-size: 18px;
   font-weight: 600;
   line-height: 22px;
-  margin: 28px 0 0;
+  margin: 24px 0 0;
 }
 .aboutcard__subtitle {
   margin-top: 12px;
   line-height: 22px;
+  font-size: 14px;
 }
 
 /* ---------------------- Footer ---------------------- */

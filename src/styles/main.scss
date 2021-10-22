@@ -104,8 +104,8 @@ nav {
 /* ---------------------- Header ---------------------- */
 .container {
   position: relative;
-  max-width: 1110px;
-  margin: auto;
+  max-width: 1110px + $page-padding * 2;
+  margin: 30px auto auto;
   padding-right: 32px;
   padding-left: 32px;
 }
@@ -164,14 +164,14 @@ nav {
 
   &__content {
     width: 50%;
-    padding: 120px 0 130px;
+    padding: 90px 0 130px;
   }
 
   &__title {
     font-size: 48px;
     font-weight: 600;
     line-height: 58px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   &__subtitle {
@@ -210,7 +210,7 @@ nav {
   &__social {
     position: absolute;
     right: 32px;
-    top: calc(100% / 2 - 28px);
+    top: calc(100% / 2 - 65px);
     flex-direction: column;
 
     .social__icon {
@@ -252,7 +252,7 @@ nav {
   &__text {
     line-height: 26px;
     transition: height 0.3s ease-in, opacity 0.3s ease-in;
-    height: 200px;
+    height: 150px;
     opacity: 1;
 
     &.collapse {
@@ -353,12 +353,13 @@ nav {
     font-size: 18px;
     font-weight: 600;
     line-height: 22px;
-    margin: 28px 0 0;
+    margin: 24px 0 0;
   }
 
   &__subtitle {
     margin-top: 12px;
     line-height: 22px;
+    font-size: 14px;
   }
 }
 
