@@ -1,8 +1,10 @@
 function collapseText(btn) {
     let target = document.querySelector(btn.getAttribute('data-target'));
-    if (target.className === 'about__text show') {
-        target.className = 'about__text collapse';
+    let showIndex = target.className.indexOf('show');
+    let className = target.className
+    if (showIndex > -1) {
+        target.className = className.substr(0, showIndex) + 'collapse';
     } else {
-        target.className = 'about__text show'
+        target.className = className.substr(0, className.indexOf('collapse')) + 'show';
     }
 }
