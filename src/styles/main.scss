@@ -111,7 +111,7 @@ nav {
 }
 
 .header {
-  background-image: url("/src/img/header-bg.png");
+  background-image: url("../img/header-bg.png");
   background-size: contain;
   max-height: 100vh;
   height: 100%;
@@ -297,7 +297,7 @@ nav {
     float: right;
     border-radius: 8px;
     background-size: contain;
-    background: linear-gradient(rgba(#000, 0.3), rgba(#000, 0.3)), url('/src/img/video-preview.jpg') no-repeat center center;
+    background: linear-gradient(rgba(#000, 0.3), rgba(#000, 0.3)), url('../img/video-preview.jpg') no-repeat center center;
 
     &:before {
       content: '';
@@ -306,7 +306,7 @@ nav {
       height: 60px;
       top: 100px;
       right: calc(50% - 60px / 2);
-      background: url("/src/img/icon/video-play.svg") no-repeat;
+      background: url("../img/icon/video-play.svg") no-repeat;
 
     }
   }
