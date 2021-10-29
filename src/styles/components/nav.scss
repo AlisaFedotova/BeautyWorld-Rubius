@@ -1,0 +1,18 @@
+nav {
+  display: flex;
+  align-items: center;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover, &:focus {
+      color: $color-secondary;
+      text-decoration: none;
+    }
+
+    &:not(&:last-child) {
+      margin-right: 28px;
+    }
+  }
+}

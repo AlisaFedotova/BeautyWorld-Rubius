@@ -1,0 +1,118 @@
+.container {
+  position: relative;
+  max-width: 1110px + $page-padding * 2;
+  margin: 30px auto auto;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+
+.header {
+  background-image: url("../img/header-bg.png");
+  background-size: contain;
+  max-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+
+  &__top {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      color: $text-color;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    nav {
+      a {
+        font-weight: 500;
+      }
+    }
+
+    .phone {
+      position: relative;
+      display: flex;
+      text-decoration: none;
+      color: $text-color;
+
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+
+      span {
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      small {
+        font-size: 11px;
+        position: absolute;
+        bottom: -15px;
+        right: 0;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &__content {
+    width: 50%;
+    padding: 90px 0 130px;
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+
+  &__img {
+    display: flex;
+    z-index: 1;
+
+    img {
+      z-index: 1;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -110px;
+      left: calc(100% - 480px);
+      width: 472px;
+      height: 472px;
+      background: $color-primary;
+      border-radius: 50%;
+    }
+  }
+
+  &__hero {
+    position: absolute;
+    bottom: 0;
+    right: 130px;
+  }
+
+  &__social {
+    position: absolute;
+    right: 32px;
+    top: calc(100% / 2 - 65px);
+    flex-direction: column;
+
+    .social__icon {
+      &:not(&:first-child) {
+        margin-top: 20px;
+      }
+    }
+  }
+}
