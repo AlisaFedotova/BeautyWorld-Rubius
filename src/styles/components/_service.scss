@@ -6,6 +6,12 @@
     display: flex;
     border-radius: 8px;
     overflow: hidden;
+
+    img {
+      object-fit: contain;
+      width: 250px;
+      height: 180px;
+    }
   }
 
   &__title {

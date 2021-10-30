@@ -1,0 +1,14 @@
+.masters {
+  margin-top: 180px;
+
+  &__wrapper {
+    margin: 0 -15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  &__subtitle {
+    margin-bottom: 25px;
+  }
+}

@@ -8,10 +8,12 @@
 @import "components/social";
 @import "components/service";
 @import "components/price";
+@import "components/master";
 
 @import "blocks/about";
 @import "blocks/services";
 @import "blocks/prices";
+@import "blocks/masters";
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -36,6 +38,7 @@ section {
 
 h2 {
   margin-top: 0;
+  margin-bottom: 32px;
   font-size: 48px;
   font-weight: 700;
 }

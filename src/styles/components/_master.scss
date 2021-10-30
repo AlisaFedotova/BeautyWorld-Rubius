@@ -1,0 +1,61 @@
+.master {
+  width: 255px;
+  margin: 15px;
+
+  &__photo {
+    position: relative;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+
+    &:hover a {
+      opacity: 1;
+    }
+
+    img {
+      object-fit: contain;
+      width: 255px;
+      height: 300px;
+    }
+
+    a {
+      opacity: 0;
+      display: flex;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5);
+      text-decoration: none;
+      transition: opacity 0.1s ease-in;
+
+      div {
+        margin: auto;
+        text-align: center;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  &__description {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  &__exp {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+}
