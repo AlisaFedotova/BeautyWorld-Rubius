@@ -1,6 +1,4 @@
 .about {
-  padding: 100px 0;
-
   &__container {
     display: flex;
   }
@@ -11,12 +9,6 @@
 
   &__content {
     width: 50%;
-  }
-
-  &__title {
-    margin-top: 0;
-    font-size: 48px;
-    font-weight: 700;
   }
 
   &__subtitle {

@@ -6,8 +6,10 @@
 @import "components/btn";
 @import "components/nav";
 @import "components/social";
+@import "components/service";
 
 @import "blocks/about";
+@import "blocks/services";
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -26,15 +28,12 @@ body {
   min-height: 100vh;
 }
 
-main {
-  max-width: 1110px + $page-padding * 2;
-  width: 100%;
-  margin: 0 auto;
-  padding-right: $page-padding;
-  padding-left: $page-padding;
+section {
+  margin-top: 100px;
 }
 
-section {
-  max-width: 1110px;
-  width: 100%;
+h2 {
+  margin-top: 0;
+  font-size: 48px;
+  font-weight: 700;
 }

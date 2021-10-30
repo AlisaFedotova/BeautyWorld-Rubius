@@ -1,0 +1,28 @@
+.service {
+  width: 350px;
+  margin: 0 15px 48px 15px;
+
+  &__img {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 20px 0 8px;
+  }
+
+  &__description {
+    font-size: 12px;
+    margin-bottom: 16px;
+    line-height: 20px;
+  }
+
+  &__btn {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
