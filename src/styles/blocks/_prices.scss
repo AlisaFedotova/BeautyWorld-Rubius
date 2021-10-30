@@ -1,0 +1,19 @@
+.prices {
+  &__wrapper {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+  }
+
+  &__menu {
+    margin-bottom: 50px;
+
+    a {
+      font-weight: 500;
+    }
+  }
+}
