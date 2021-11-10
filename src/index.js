@@ -1,3 +1,12 @@
+window.onscroll = function () {
+    let block = document.querySelector('.bg-onscroll');
+
+    if (block) {
+        let scrolled = window.pageYOffset >= 100;
+        block.classList.toggle('bg-white', scrolled);
+    }
+}
+
 function collapseText(btn) {
     let target = document.querySelector(btn.dataset.target);
 
