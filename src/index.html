@@ -195,71 +195,341 @@
         <section class="prices" id="prices">
             <div class="container">
                 <h2 class="prices__title">Услуги и цены</h2>
-                <nav class="prices__menu">
-                    <a data-selected="selected">Стрижка и укладка</a>
-                    <a>Косметология</a>
-                    <a>Маникюр и педикюр</a>
-                    <a>Макияж</a>
-                    <a>Брови и ресницы</a>
-                    <a>Массаж</a>
-                </nav>
-                <div class="prices__wrapper">
-                    <div class="price">
-                        <div class="price__title">
-                            <h4>Женская стрижка</h4>
-                            <div class="price__subtitle">Короткие волосы</div>
+                <div class="tabs">
+                    <nav class="prices__menu">
+                        <a id="tab1" class="tabs__tab" data-tab="1">Стрижка и укладка</a>
+                        <a id="tab2" class="tabs__tab" data-tab="2">Косметология</a>
+                        <a id="tab3" class="tabs__tab" data-tab="3">Маникюр и педикюр</a>
+                        <a id="tab4" class="tabs__tab" data-tab="4">Макияж</a>
+                        <a id="tab5" class="tabs__tab" data-tab="5">Брови и ресницы</a>
+                        <a id="tab6" class="tabs__tab" data-tab="6">Массаж</a>
+                    </nav>
+                    <div class="prices__content tabs__content">
+                        <div class="prices__wrapper tabs__content-item" data-tab="1" id="tabcontent1">
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Женская стрижка</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Мужская стрижка</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Детский Стиль</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Креативный Стиль</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Стрижка бороды и усов</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Экспресс укладка</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Укладка дневная</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Прическа вечерняя (свадебная)
+                                    </h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">3000 ₽</div>
+                            </div>
                         </div>
-                        <div class="price__value">1200 ₽</div>
-                    </div>
-                    <div class="price">
-                        <div class="price__title">
-                            <h4>Мужская стрижка</h4>
-                            <div class="price__subtitle">Короткие волосы</div>
+                        <div class="prices__wrapper tabs__content-item" data-tab="2" id="tabcontent2">
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Женская стрижка</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">3455 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Мужская стрижка</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">3455 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Детский Стиль</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">3455 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Детский Стиль</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">3455 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Креативный Стиль</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">3455 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Креативный Стиль</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">3455 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Стрижка бороды и усов</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">3455 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Экспресс укладка</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">3455 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Укладка дневная</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">3455 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Прическа вечерняя (свадебная)
+                                    </h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">3300 ₽</div>
+                            </div>
                         </div>
-                        <div class="price__value">1200 ₽</div>
-                    </div>
-                    <div class="price">
-                        <div class="price__title">
-                            <h4>Детский Стиль</h4>
-                            <div class="price__subtitle">Короткие волосы</div>
+                        <div class="prices__wrapper tabs__content-item" data-tab="3" id="tabcontent3">
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Женская стрижка</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">2140 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Мужская стрижка</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">2140 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Детский Стиль</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">2140 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Креативный Стиль</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">2140 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Стрижка бороды и усов</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">2140 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Экспресс укладка</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">2140 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Укладка дневная</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">2140 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Прическа вечерняя (свадебная)
+                                    </h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">2000 ₽</div>
+                            </div>
                         </div>
-                        <div class="price__value">1200 ₽</div>
-                    </div>
-                    <div class="price">
-                        <div class="price__title">
-                            <h4>Креативный Стиль</h4>
-                            <div class="price__subtitle">Короткие волосы</div>
+                        <div class="prices__wrapper tabs__content-item" data-tab="4" id="tabcontent4">
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Укладка дневная</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">900 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Прическа вечерняя (свадебная)
+                                    </h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1700 ₽</div>
+                            </div>
                         </div>
-                        <div class="price__value">1200 ₽</div>
-                    </div>
-                    <div class="price">
-                        <div class="price__title">
-                            <h4>Стрижка бороды и усов</h4>
-                            <div class="price__subtitle">Короткие волосы</div>
+                        <div class="prices__wrapper tabs__content-item" data-tab="5" id="tabcontent5">
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Женская стрижка</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">450 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Мужская стрижка</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">120 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Детский Стиль</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">120000 ₽</div>
+                            </div>
                         </div>
-                        <div class="price__value">1200 ₽</div>
-                    </div>
-                    <div class="price">
-                        <div class="price__title">
-                            <h4>Экспресс укладка</h4>
-                            <div class="price__subtitle">Короткие волосы</div>
+                        <div class="prices__wrapper tabs__content-item" data-tab="6" id="tabcontent6">
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Мужская стрижка</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Детский Стиль</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Креативный Стиль</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Стрижка бороды и усов</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Экспресс укладка</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Укладка дневная</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Прическа вечерняя (свадебная)
+                                    </h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">3000 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Мужская стрижка</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Детский Стиль</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Креативный Стиль</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Мужская стрижка</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Детский Стиль</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
+                            <div class="price">
+                                <div class="price__title">
+                                    <h4>Креативный Стиль</h4>
+                                    <div class="price__subtitle">Короткие волосы</div>
+                                </div>
+                                <div class="price__value">1200 ₽</div>
+                            </div>
                         </div>
-                        <div class="price__value">1200 ₽</div>
-                    </div>
-                    <div class="price">
-                        <div class="price__title">
-                            <h4>Укладка дневная</h4>
-                            <div class="price__subtitle">Короткие волосы</div>
-                        </div>
-                        <div class="price__value">1200 ₽</div>
-                    </div>
-                    <div class="price">
-                        <div class="price__title">
-                            <h4>Прическа вечерняя (свадебная)
-                            </h4>
-                            <div class="price__subtitle">Короткие волосы</div>
-                        </div>
-                        <div class="price__value">3000 ₽</div>
                     </div>
                 </div>
             </div>

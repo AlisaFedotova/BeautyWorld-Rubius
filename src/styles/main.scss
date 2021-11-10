@@ -3,17 +3,18 @@
 @import "layout/footer";
 @import "layout/header";
 
+@import "blocks/about";
+@import "blocks/services";
+@import "blocks/prices";
+@import "blocks/masters";
+
 @import "components/btn";
 @import "components/nav";
 @import "components/social";
 @import "components/service";
 @import "components/price";
 @import "components/master";
-
-@import "blocks/about";
-@import "blocks/services";
-@import "blocks/prices";
-@import "blocks/masters";
+@import "components/tabs";
 
 *, *:before, *:after {
   box-sizing: border-box;

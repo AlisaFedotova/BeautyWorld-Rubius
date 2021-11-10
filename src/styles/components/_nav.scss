@@ -14,10 +14,5 @@ nav {
     &:not(&:last-child) {
       margin-right: 28px;
     }
-
-    &[data-selected=selected] {
-      color: $color-secondary;
-      border-bottom: 2px solid #00bf78;
-    }
   }
 }
