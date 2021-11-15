@@ -16,6 +16,7 @@
 @import "components/price";
 @import "components/master";
 @import "components/tabs";
+@import "components/burger";
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -77,5 +78,19 @@ h2 {
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.desktop-only {
+  display: block;
+  @media (max-width: $screen-md) {
+    display: none !important;
+  }
+}
+
+.mobile-only {
+  display: none;
+  @media (max-width: $screen-md) {
+    display: block !important;
   }
 }

@@ -5,14 +5,28 @@
   height: 100%;
   overflow: hidden;
 
+  @media (max-width: $screen-md) {
+    height: 100vh;
+  }
+
   .container {
     margin-top: $main-menu-height;
     position: relative;
+
+    @media (max-width: $screen-md) {
+      margin: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 
   &__content {
     width: 50%;
     padding: 90px 0 130px;
+
+    @media (max-width: $screen-md) {
+      width: 90%;
+    }
   }
 
   &__title {
@@ -53,6 +67,10 @@
     position: absolute;
     bottom: 0;
     right: 130px;
+
+    @media (max-width: $screen-md) {
+      display: none;
+    }
   }
 
   &__social {
@@ -68,7 +86,3 @@
     }
   }
 }
-
-//@media (max-width: $md-screen) {
-//
-//}

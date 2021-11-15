@@ -46,3 +46,15 @@ tabs.forEach(tab => {
 const opentab = JSON.parse(localStorage.getItem('jstabs-opentab')) || '1';
 
 activateTab(opentab);
+
+/* BURGER MENU */
+const burgerMenu = document.querySelector('#burger');
+const burgerMenuItems = document.querySelectorAll('#burger-menu .burger-menu-item');
+
+burgerMenuItems.forEach(item => {
+    console.log(item);
+    item.addEventListener('click', () => {
+        console.log(burgerMenu.checked);
+        burgerMenu.checked = !burgerMenu.checked;
+    })
+})
