@@ -57,6 +57,13 @@ h2 {
   transition: 0.2s;
 }
 
+.fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+
 // Scrollbar
 ::-webkit-scrollbar {
   width: 10px;
