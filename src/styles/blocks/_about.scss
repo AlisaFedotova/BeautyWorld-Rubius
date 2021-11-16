@@ -5,8 +5,8 @@
     display: flex;
   }
 
-  .about__container + .about__container {
-    //margin-top: 100px;
+  &__benefits {
+    margin-top: 70px;
   }
 
   &__content {

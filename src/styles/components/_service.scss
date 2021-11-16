@@ -8,9 +8,8 @@
     overflow: hidden;
 
     img {
-      object-fit: contain;
-      width: 250px;
-      height: 180px;
+      object-fit: cover;
+      width: 100%;
     }
   }
 

@@ -1,14 +1,5 @@
 @import "variables";
 
-@import "layout/footer";
-@import "layout/header";
-
-@import "blocks/about";
-@import "blocks/services";
-@import "blocks/prices";
-@import "blocks/masters";
-@import "blocks/main-menu";
-
 @import "components/btn";
 @import "components/nav";
 @import "components/social";
@@ -17,6 +8,15 @@
 @import "components/master";
 @import "components/tabs";
 @import "components/burger";
+
+@import "layout/footer";
+@import "layout/header";
+
+@import "blocks/about";
+@import "blocks/services";
+@import "blocks/prices";
+@import "blocks/masters";
+@import "blocks/main-menu";
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -44,7 +44,6 @@ body {
 
 section {
   padding: 50px 32px;
-  //margin-top: 100px;
 }
 
 h2 {
