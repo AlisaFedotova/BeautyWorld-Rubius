@@ -1,0 +1,59 @@
+.main-menu {
+  width: 100%;
+  height: $main-menu-height;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  &.container {
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .logo {
+    color: $text-color;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+
+    a {
+      font-weight: 500;
+    }
+  }
+
+  .phone {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+
+    span {
+      font-size: 18px;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    small {
+      font-size: 11px;
+      position: absolute;
+      bottom: -15px;
+      right: 0;
+      white-space: nowrap;
+    }
+  }
+}

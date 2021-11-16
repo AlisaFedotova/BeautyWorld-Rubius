@@ -1,0 +1,16 @@
+.social {
+  display: flex;
+
+  &__icon {
+    fill: black;
+    fill-opacity: 0.4;
+
+    &:hover {
+      fill-opacity: 0.55;
+    }
+
+    &:focus {
+      fill-opacity: 0.65;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.btn {
+  font-family: $font-family;
+  color: #fff;
+  background: $color-primary;
+  border-radius: 24px;
+  padding: 17px 30px;
+  border: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: lowercase;
+  cursor: pointer;
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    background: $color-primary-darken;
+  }
+
+  &:focus {
+    background: rgba($color-primary-darken, 0.8);
+  }
+}

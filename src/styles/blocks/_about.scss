@@ -1,0 +1,122 @@
+.about {
+  padding-top: 100px;
+
+  &__container {
+    display: flex;
+  }
+
+  &__benefits {
+    margin-top: 70px;
+  }
+
+  &__content {
+    width: 50%;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 0;
+  }
+
+  &__text {
+    line-height: 26px;
+    transition: height 0.3s ease-in, opacity 0.3s ease-in;
+    height: 150px;
+    opacity: 1;
+
+    &.collapse {
+      height: 0;
+      opacity: 0;
+    }
+  }
+
+  &__btn {
+    color: $color-link;
+    background: transparent;
+    padding: 0;
+
+    &:hover, &:focus {
+      color: $color-secondary;
+      background: transparent;
+    }
+  }
+
+  &__videobox {
+    width: 50%;
+  }
+}
+
+.videobox {
+  cursor: pointer;
+  transition: 0.1s ease-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__video {
+    position: relative;
+    width: 443px;
+    height: 295px;
+    float: right;
+    border-radius: 8px;
+    background-size: contain;
+    background: linear-gradient(rgba(#000, 0.3), rgba(#000, 0.3)), url('../img/video-preview.jpg') no-repeat center center;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      top: 100px;
+      right: calc(50% - 60px / 2);
+      background: url("../img/icon/video-play.svg") no-repeat;
+
+    }
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-top: 6px;
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    left: 0;
+    text-align: center;
+  }
+}
+
+.aboutcard {
+  text-align: center;
+  width: 350px;
+  margin: 0 auto;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin: 24px 0 0;
+  }
+
+  &__subtitle {
+    margin-top: 12px;
+    line-height: 22px;
+    font-size: 14px;
+  }
+}

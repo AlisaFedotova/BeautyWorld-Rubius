@@ -1,0 +1,25 @@
+.prices {
+  &__content {
+    height: 350px;
+  }
+
+  &__wrapper {
+    height: 350px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-x: auto;
+  }
+
+  &__menu {
+    margin-bottom: 50px;
+
+    a {
+      cursor: pointer;
+      font-weight: 500;
+    }
+  }
+}

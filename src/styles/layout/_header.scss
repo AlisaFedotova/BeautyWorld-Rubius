@@ -1,0 +1,88 @@
+.header {
+  background-image: url("../img/header-bg.png");
+  background-size: contain;
+  max-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+
+  @media (max-width: $screen-md) {
+    height: 100vh;
+  }
+
+  .container {
+    margin-top: $main-menu-height;
+    position: relative;
+
+    @media (max-width: $screen-md) {
+      margin: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__content {
+    width: 50%;
+    padding: 90px 0 130px;
+
+    @media (max-width: $screen-md) {
+      width: 90%;
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+
+  &__img {
+    display: flex;
+    z-index: 1;
+
+    img {
+      z-index: 1;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -110px;
+      left: calc(100% - 480px);
+      width: 472px;
+      height: 472px;
+      background: $color-primary;
+      border-radius: 50%;
+    }
+  }
+
+  &__hero {
+    position: absolute;
+    bottom: 0;
+    right: 130px;
+
+    @media (max-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &__social {
+    position: absolute;
+    right: 32px;
+    top: calc(100% / 2 - 65px);
+    flex-direction: column;
+
+    .social__icon {
+      &:not(&:first-child) {
+        margin-top: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+    white-space: nowrap;
+    margin: 10px 0;
+
+    &:hover, &:focus {
+      color: $color-secondary;
+      text-decoration: none;
+    }
+
+    &:not(&:last-child) {
+      margin-right: 28px;
+    }
+  }
+}

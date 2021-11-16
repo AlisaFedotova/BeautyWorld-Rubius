@@ -1,0 +1,19 @@
+.footer {
+  max-width: 1110px + $page-padding * 2;
+  width: 100%;
+  margin: 0 auto;
+  padding-right: $page-padding;
+  padding-left: $page-padding;
+
+  &__wrapper {
+    font-size: 12px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    margin: 0 0 8px 0;
+  }
+}
