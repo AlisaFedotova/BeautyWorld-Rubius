@@ -8,6 +8,7 @@
 @import "components/master";
 @import "components/tabs";
 @import "components/burger";
+@import "components/carousel";
 
 @import "layout/footer";
 @import "layout/header";
@@ -43,7 +44,7 @@ body {
 }
 
 section {
-  padding: 50px 32px;
+  padding: $section-padding-y $section-padding-x;
 }
 
 h2 {

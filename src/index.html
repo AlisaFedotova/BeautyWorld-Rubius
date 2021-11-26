@@ -8,6 +8,7 @@
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>Мир красоты</title>
 </head>
 <body>
@@ -561,7 +562,7 @@
                     <div class="master">
                         <div class="master__photo">
                             <img src="img/masters/krasnova_irina.jpg" alt="Краснова Ирина">
-                            <a class="test" href="#contacts"><div>Записаться<br>к мастеру</div></a>
+                            <a href="#contacts"><div>Записаться<br>к мастеру</div></a>
                         </div>
                         <div class="master__name">Краснова Ирина</div>
                         <div class="master__description">Мастер ногтевого сервиса</div>
@@ -570,7 +571,7 @@
                     <div class="master">
                         <div class="master__photo">
                             <img src="img/masters/khalilova_janna.jpg" alt="Калилова Жанна">
-                            <a class="test" href="#contacts"><div>Записаться<br>к мастеру</div></a>
+                            <a href="#contacts"><div>Записаться<br>к мастеру</div></a>
                         </div>
                         <div class="master__name">Калилова Жанна</div>
                         <div class="master__description">Визажист-стилист</div>
@@ -579,7 +580,7 @@
                     <div class="master">
                         <div class="master__photo">
                             <img src="img/masters/kiseleva_alina.jpg" alt="Киселева Алина">
-                            <a class="test" href="#contacts"><div>Записаться<br>к мастеру</div></a>
+                            <a href="#contacts"><div>Записаться<br>к мастеру</div></a>
                         </div>
                         <div class="master__name">Киселева Алина</div>
                         <div class="master__description">Парикмахер</div>
@@ -588,7 +589,7 @@
                     <div class="master">
                         <div class="master__photo">
                             <img src="img/masters/ivanova_elena.jpg" alt="Иванова Елена">
-                            <a class="test" href="#contacts"><div>Записаться<br>к мастеру</div></a>
+                            <a href="#contacts"><div>Записаться<br>к мастеру</div></a>
                         </div>
                         <div class="master__name">Иванова Елена</div>
                         <div class="master__description">Мастер ногтевого сервиса</div>
@@ -597,7 +598,94 @@
                 </div>
             </div>
         </section>
-        <section id="portfolio"></section>
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="portfolio__title">Наши работы</h2>
+            </div>
+            <div class="portfolio__carousel carousel" id="portfolio-carousel">
+                <div class="carousel__cell">
+                    <img class="carousel__image"
+                         src="img/portfolio-slides/1.jpg"/>
+                    <a>
+                        <div>
+                            <img src="img/icon/search.svg"/><br/>
+                            <span>Увеличить</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel__cell">
+                    <img class="carousel__image"
+                         src="img/portfolio-slides/2.jpg"/>
+                    <a>
+                        <div>
+                            <img src="img/icon/search.svg"/><br/>
+                            <span>Увеличить</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel__cell">
+                    <img class="carousel__image"
+                         src="img/portfolio-slides/3.jpg"/>
+                    <a>
+                        <div>
+                            <img src="img/icon/search.svg"/><br/>
+                            <span>Увеличить</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel__cell">
+                    <img class="carousel__image"
+                         src="img/portfolio-slides/4.jpg"/>
+                    <a>
+                        <div>
+                            <img src="img/icon/search.svg"/><br/>
+                            <span>Увеличить</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel__cell">
+                    <img class="carousel__image"
+                         src="img/portfolio-slides/1.jpg"/>
+                    <a>
+                        <div>
+                            <img src="img/icon/search.svg"/><br/>
+                            <span>Увеличить</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel__cell">
+                    <img class="carousel__image"
+                         src="img/portfolio-slides/2.jpg"/>
+                    <a>
+                        <div>
+                            <img src="img/icon/search.svg"/><br/>
+                            <span>Увеличить</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel__cell">
+                    <img class="carousel__image"
+                         src="img/portfolio-slides/3.jpg"/>
+                    <a>
+                        <div>
+                            <img src="img/icon/search.svg"/><br/>
+                            <span>Увеличить</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="carousel__cell">
+                    <img class="carousel__image"
+                         src="img/portfolio-slides/4.jpg"/>
+                    <a>
+                        <div>
+                            <img src="img/icon/search.svg"/><br/>
+                            <span>Увеличить</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="container"></div>
+        </section>
         <section id="contacts"></section>
     </main>
     <footer class="footer">
@@ -615,6 +703,7 @@
         </div>
     </footer>
 </div>
-<script src="index.js"></script>
+<script src="js/index.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>

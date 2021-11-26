@@ -53,12 +53,21 @@ function init() {
     const burgerMenuItems = document.querySelectorAll('#burger-menu .burger-menu-item');
 
     burgerMenuItems.forEach(item => {
-        console.log(item);
         item.addEventListener('click', () => {
-            console.log(burgerMenu.checked);
             burgerMenu.checked = !burgerMenu.checked;
         })
     })
+
+    /* FLICKITY CAROUSEL for PORTFOLIO */
+    let flkty = new Flickity('#portfolio-carousel', {
+        viewBox: '0 0 14 14',
+        wrapAround: true,
+        autoPlay: true,
+        pauseAutoPlayOnHover: true,
+        draggable: true,
+        cellAlign: 'left',
+        pageDots: false
+    });
 }
 
 window.addEventListener('DOMContentLoaded', init);
