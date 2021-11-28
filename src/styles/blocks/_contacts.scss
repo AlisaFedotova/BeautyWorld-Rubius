@@ -1,0 +1,47 @@
+.contacts {
+  background: #f8f6f7;
+
+  .container {
+    position: relative;
+  }
+
+  &__social {
+    p {
+      margin-top: 32px;
+      font-size: 12px;
+    }
+
+    .social {
+      flex-direction: row;
+      margin-bottom: 150px;
+      @media (max-width: $screen-md) {
+        margin-bottom: 30px;
+      }
+
+      &__icon {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  &__form {
+    position: absolute;
+    top: -10px;
+    right: 65px;
+    width: 445px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+
+    @media (max-width: $screen-md) {
+      position: static;
+    }
+    @media (max-width: $screen-sm) {
+      width: auto;
+    }
+      .form__title {
+      margin-top: 0;
+    }
+  }
+}

@@ -9,6 +9,7 @@
 @import "components/tabs";
 @import "components/burger";
 @import "components/carousel";
+@import "components/form";
 
 @import "layout/footer";
 @import "layout/header";
@@ -19,6 +20,7 @@
 @import "blocks/masters";
 @import "blocks/main-menu";
 @import "blocks/portfolio";
+@import "blocks/contacts";
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -42,10 +44,18 @@ body {
   margin: auto;
   padding-right: 32px;
   padding-left: 32px;
+
+  @media (max-width: $screen-sm) {
+    padding: 10px;
+  }
 }
 
 section {
   padding: $section-padding-y $section-padding-x;
+
+  @media (max-width: $screen-sm) {
+    padding: $section-padding-y $section-padding-sm-x;
+  }
 }
 
 h2 {
@@ -53,6 +63,20 @@ h2 {
   margin-bottom: 32px;
   font-size: 48px;
   font-weight: 700;
+}
+
+a {
+  color: $color-link;
+}
+
+input {
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  padding: 13px 16px;
+  font-size: 14px;
+  font-family: $font-family;
+  margin-bottom: 20px;
+  line-height: 14px;
 }
 
 .bg-white {
