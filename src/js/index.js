@@ -7,10 +7,9 @@ function init() {
             block.classList.toggle('bg-white', scrolled);
         }
     }
-
-    function collapseText(btn) {
-        let target = document.querySelector(btn.dataset.target);
-
+    const collapseBtn = document.querySelector('#collapseBtn');
+    collapseBtn.onclick = function (btn) {
+        let target = document.querySelector(btn.target.dataset.target);
         if (target) {
             const isShown = target.classList.contains('show');
             target.classList.toggle('show', !isShown);
